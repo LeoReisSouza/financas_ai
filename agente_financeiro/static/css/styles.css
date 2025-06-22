@@ -1,0 +1,82 @@
+:root {
+  --dark-bg: #121212;      
+  --card-bg: #1e1e1e;     
+  --input-bg: #2a2a2a;    
+  --neon-purple: #b04cff; 
+  --text-white: #ffffff;   
+  --text-light: #e0e0e0;   
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--text-white);
+  font-family: 'Inter', sans-serif;
+}
+
+.card-header {
+  background-color: var(--card-bg) !important;
+  color: var(--text-white) !important;
+  border-bottom: 2px solid var(--neon-purple) !important;
+}
+
+.card-header h5 {
+  font-weight: 600;
+}
+
+.badge.bg-purple {
+  background-color: var(--neon-purple) !important;
+  color: white;
+}
+
+/* ÁREA DE MENSAGENS */
+.chat-container {
+  background-color: var(--card-bg);
+  min-height: 400px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+/* MENSAGENS */
+.message-user {
+  background-color: var(--input-bg);
+  color: var(--text-white) !important;
+  border-left: 3px solid var(--neon-purple);
+  margin-bottom: 10px;
+}
+
+.message-bot {
+  background-color: var(--neon-purple);
+  color: var(--text-white) !important;
+  margin-bottom: 10px;
+}
+
+/* CAMPO DE ENTRADA */
+#user-input {
+  background-color: var(--input-bg);
+  color: var(--text-white) !important;
+  border: 1px solid var(--neon-purple);
+  padding: 10px 15px;
+}
+
+#user-input::placeholder {
+  color: #a0a0a0 !important;
+  opacity: 1;
+}
+
+.btn-primary {
+  background-color: var(--neon-purple);
+  border-color: var(--neon-purple);
+  color: white;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+.btn-primary:hover {
+  background-color: #9b3dff;
+  border-color: #9b3dff;
+  box-shadow: 0 0 10px rgba(176, 76, 255, 0.5);
+}
+
+.btn-primary i {
+  margin-right: 8px;
+}
